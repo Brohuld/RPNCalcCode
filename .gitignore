@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Xcode : réglages personnels et fichiers générés
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# Dossier de travail de Claude
+Claude outputs/

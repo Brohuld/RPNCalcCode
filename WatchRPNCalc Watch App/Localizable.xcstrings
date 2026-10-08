@@ -1,0 +1,96 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "Add": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Additionner"
+          }
+        }
+      }
+    },
+    "Decimal point": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virgule décimale"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Effacer le dernier chiffre"
+          }
+        }
+      }
+    },
+    "Divide": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diviser"
+          }
+        }
+      }
+    },
+    "Enter": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrée"
+          }
+        }
+      }
+    },
+    "Math error": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur mathématique"
+          }
+        }
+      }
+    },
+    "Multiply": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Multiplier"
+          }
+        }
+      }
+    },
+    "Overflow": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dépassement de capacité"
+          }
+        }
+      }
+    },
+    "Subtract": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soustraire"
+          }
+        }
+      }
+    }
+  }
+}

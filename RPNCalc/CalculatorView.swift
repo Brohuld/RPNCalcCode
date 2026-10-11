@@ -70,6 +70,16 @@ struct CalculatorView: View {
 
     private var statusBar: some View {
         HStack(spacing: 8) {
+            // Tout à droite : à gauche, les boutons de fenêtre de l'iPad (mode fenêtré) et du Mac.
+            Spacer()
+
+            if let pending = model.engine.pending {
+                StatusChip(text: pending == .store ? "STO" : "RCL", highlighted: true)
+            }
+            if model.shiftActive {
+                StatusChip(text: "2nd", highlighted: true)
+            }
+
             Menu {
                 Picker("Angle", selection: $model.angleMode) {
                     Text("Degrees").tag(AngleMode.deg)
@@ -101,8 +111,6 @@ struct CalculatorView: View {
             .menuIndicator(.hidden)
             .fixedSize()
 
-            Spacer()
-
             Button(action: copyX) {
                 IconChip(systemName: "doc.on.doc")
             }
@@ -112,13 +120,6 @@ struct CalculatorView: View {
                 IconChip(systemName: "doc.on.clipboard")
             }
             .accessibilityLabel(Text("Paste"))
-
-            if let pending = model.engine.pending {
-                StatusChip(text: pending == .store ? "STO" : "RCL", highlighted: true)
-            }
-            if model.shiftActive {
-                StatusChip(text: "2nd", highlighted: true)
-            }
         }
         .buttonStyle(.plain)
     }

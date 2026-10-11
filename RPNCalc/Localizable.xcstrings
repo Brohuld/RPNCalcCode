@@ -550,6 +550,46 @@
           }
         }
       }
+    },
+    "Open RPN Calculator": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir RPN Calculator"
+          }
+        }
+      }
+    },
+    "Screen": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écran"
+          }
+        }
+      }
+    },
+    "Calculator": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calculatrice"
+          }
+        }
+      }
+    },
+    "RPN Calculator": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RPN Calculator"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

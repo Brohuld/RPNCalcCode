@@ -1,0 +1,56 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "Calculator": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calculatrice"
+          }
+        }
+      }
+    },
+    "Open RPN Calculator": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir RPN Calculator"
+          }
+        }
+      }
+    },
+    "Open the RPN calculator.": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvre la calculatrice RPN."
+          }
+        }
+      }
+    },
+    "RPN Calculator": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RPN Calculator"
+          }
+        }
+      }
+    },
+    "Screen": {
+      "localizations": {
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écran"
+          }
+        }
+      }
+    }
+  }
+}

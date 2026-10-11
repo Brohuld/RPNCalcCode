@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BFF7DAFD3077B51600918FA8 /* WatchRPNCalc Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BFF7DADF3077B51400918FA8 /* WatchRPNCalc Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BFFA4276307BCB9C00838D1C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFA4275307BCB9C00838D1C /* WidgetKit.framework */; };
+		BFFA4278307BCB9C00838D1C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFFA4277307BCB9C00838D1C /* SwiftUI.framework */; };
+		BFFA4285307BCB9D00838D1C /* RPNControlExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BFFA4273307BCB9C00838D1C /* RPNControlExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,13 @@
 			remoteGlobalIDString = BFF7DADE3077B51400918FA8;
 			remoteInfo = "WatchRPNCalc Watch App";
 		};
+		BFFA4283307BCB9D00838D1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1C0DE00000000000000000A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFFA4272307BCB9C00838D1C;
+			remoteInfo = RPNControlExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +56,17 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFFA4286307BCB9D00838D1C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BFFA4285307BCB9D00838D1C /* RPNControlExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +74,9 @@
 		BFF7DADF3077B51400918FA8 /* WatchRPNCalc Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchRPNCalc Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF7DAEB3077B51600918FA8 /* WatchRPNCalc Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchRPNCalc Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF7DAF53077B51600918FA8 /* WatchRPNCalc Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WatchRPNCalc Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFA4273307BCB9C00838D1C /* RPNControlExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RPNControlExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFFA4275307BCB9C00838D1C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BFFA4277307BCB9C00838D1C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -63,6 +87,20 @@
 			);
 			target = BFF7DADE3077B51400918FA8 /* WatchRPNCalc Watch App */;
 		};
+		A1C0DE000000000000000011 /* Exceptions for "RPNCalc" folder in "RPNControlExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				OpenCalculatorIntent.swift,
+			);
+			target = BFFA4272307BCB9C00838D1C /* RPNControlExtension */;
+		};
+		BFFA4289307BCB9D00838D1C /* Exceptions for "RPNControl" folder in "RPNControlExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BFFA4272307BCB9C00838D1C /* RPNControlExtension */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -70,6 +108,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				A1C0DE000000000000000010 /* Exceptions for "RPNCalc" folder in "WatchRPNCalc Watch App" target */,
+				A1C0DE000000000000000011 /* Exceptions for "RPNCalc" folder in "RPNControlExtension" target */,
 			);
 			path = RPNCalc;
 			sourceTree = "<group>";
@@ -87,6 +126,14 @@
 		BFF7DAF83077B51600918FA8 /* WatchRPNCalc Watch AppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "WatchRPNCalc Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		BFFA4279307BCB9C00838D1C /* RPNControl */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BFFA4289307BCB9D00838D1C /* Exceptions for "RPNControl" folder in "RPNControlExtension" target */,
+			);
+			path = RPNControl;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -120,6 +167,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFFA4270307BCB9C00838D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFFA4278307BCB9C00838D1C /* SwiftUI.framework in Frameworks */,
+				BFFA4276307BCB9C00838D1C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,6 +186,8 @@
 				BFF7DAE03077B51400918FA8 /* WatchRPNCalc Watch App */,
 				BFF7DAEE3077B51600918FA8 /* WatchRPNCalc Watch AppTests */,
 				BFF7DAF83077B51600918FA8 /* WatchRPNCalc Watch AppUITests */,
+				BFFA4279307BCB9C00838D1C /* RPNControl */,
+				BFFA4274307BCB9C00838D1C /* Frameworks */,
 				A1C0DE000000000000000005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,8 +199,18 @@
 				BFF7DADF3077B51400918FA8 /* WatchRPNCalc Watch App.app */,
 				BFF7DAEB3077B51600918FA8 /* WatchRPNCalc Watch AppTests.xctest */,
 				BFF7DAF53077B51600918FA8 /* WatchRPNCalc Watch AppUITests.xctest */,
+				BFFA4273307BCB9C00838D1C /* RPNControlExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BFFA4274307BCB9C00838D1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFFA4275307BCB9C00838D1C /* WidgetKit.framework */,
+				BFFA4277307BCB9C00838D1C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +224,13 @@
 				A1C0DE000000000000000003 /* Frameworks */,
 				A1C0DE000000000000000009 /* Resources */,
 				BFF7DAFE3077B51600918FA8 /* Embed Watch Content */,
+				BFFA4286307BCB9D00838D1C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BFF7DAFC3077B51600918FA8 /* PBXTargetDependency */,
+				BFFA4284307BCB9D00838D1C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A1C0DE000000000000000002 /* RPNCalc */,
@@ -240,6 +310,28 @@
 			productReference = BFF7DAF53077B51600918FA8 /* WatchRPNCalc Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BFFA4272307BCB9C00838D1C /* RPNControlExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFFA428A307BCB9D00838D1C /* Build configuration list for PBXNativeTarget "RPNControlExtension" */;
+			buildPhases = (
+				BFFA426F307BCB9C00838D1C /* Sources */,
+				BFFA4270307BCB9C00838D1C /* Frameworks */,
+				BFFA4271307BCB9C00838D1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BFFA4279307BCB9C00838D1C /* RPNControl */,
+			);
+			name = RPNControlExtension;
+			packageProductDependencies = (
+			);
+			productName = RPNControlExtension;
+			productReference = BFFA4273307BCB9C00838D1C /* RPNControlExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,6 +356,9 @@
 						CreatedOnToolsVersion = 27.0;
 						TestTargetID = BFF7DADE3077B51400918FA8;
 					};
+					BFFA4272307BCB9C00838D1C = {
+						CreatedOnToolsVersion = 27.0;
+					};
 				};
 			};
 			buildConfigurationList = A1C0DE00000000000000000B /* Build configuration list for PBXProject "RPNCalc" */;
@@ -285,6 +380,7 @@
 				BFF7DADE3077B51400918FA8 /* WatchRPNCalc Watch App */,
 				BFF7DAEA3077B51600918FA8 /* WatchRPNCalc Watch AppTests */,
 				BFF7DAF43077B51600918FA8 /* WatchRPNCalc Watch AppUITests */,
+				BFFA4272307BCB9C00838D1C /* RPNControlExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -312,6 +408,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BFF7DAF33077B51600918FA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFFA4271307BCB9C00838D1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,6 +452,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFFA426F307BCB9C00838D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -367,6 +477,12 @@
 			platformFilter = ios;
 			target = BFF7DADE3077B51400918FA8 /* WatchRPNCalc Watch App */;
 			targetProxy = BFF7DAFB3077B51600918FA8 /* PBXContainerItemProxy */;
+		};
+		BFFA4284307BCB9D00838D1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = BFFA4272307BCB9C00838D1C /* RPNControlExtension */;
+			targetProxy = BFFA4283307BCB9D00838D1C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -487,7 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 87NY55733C;
 				ENABLE_APP_SANDBOX = YES;
@@ -509,7 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld-Diving.Brohuld-s-Dive-Log";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -529,7 +645,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 87NY55733C;
 				ENABLE_APP_SANDBOX = YES;
@@ -551,7 +667,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld-Diving.Brohuld-s-Dive-Log";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -576,7 +692,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 87NY55733C;
 				ENABLE_PREVIEWS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -589,7 +705,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld-Diving.Brohuld-s-Dive-Log.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -615,7 +731,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 87NY55733C;
 				ENABLE_PREVIEWS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -628,7 +744,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld-Diving.Brohuld-s-Dive-Log.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -654,12 +770,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 87NY55733C;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld.WatchRPNCalc-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -684,12 +800,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 87NY55733C;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld.WatchRPNCalc-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -714,12 +830,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 87NY55733C;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld.WatchRPNCalc-Watch-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -743,12 +859,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 87NY55733C;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld.WatchRPNCalc-Watch-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -761,6 +877,85 @@
 				TEST_TARGET_NAME = "WatchRPNCalc Watch App";
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		BFFA4287307BCB9D00838D1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 87NY55733C;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RPNControl/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RPN;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld-Diving.Brohuld-s-Dive-Log.RPNControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFFA4288307BCB9D00838D1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 87NY55733C;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RPNControl/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RPN;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "Brohuld-Diving.Brohuld-s-Dive-Log.RPNControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -808,6 +1003,15 @@
 			buildConfigurations = (
 				BFF7DB033077B51600918FA8 /* Debug */,
 				BFF7DB043077B51600918FA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFFA428A307BCB9D00838D1C /* Build configuration list for PBXNativeTarget "RPNControlExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFFA4287307BCB9D00838D1C /* Debug */,
+				BFFA4288307BCB9D00838D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
